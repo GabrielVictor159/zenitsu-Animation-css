@@ -1,0 +1,152 @@
+#ambiente{
+    width: 2560px;
+    height: 1080px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-image: url("../imgs/ambiente.jpg");
+}
+#animacao{
+   
+    width: 1800px;
+    height: 400px;
+   position: absolute;
+   left: 10%;
+   top: 55%;
+   transform: scale(1.2);
+}
+#containerzenitsu{
+   
+    position: absolute;
+    top: 30%;
+    animation-name: zenitsumoviment;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-delay: 2s;
+}
+.zenitsu{
+    
+    width: 200px;
+height: 200px;
+position: absolute;
+top: 0%;
+    background-image: url("../imgs/2.png");
+    animation-name: zenitsuanimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-delay: 2s;
+    
+    
+
+}
+
+.zenitsushadow{
+    
+    width: 200px;
+height: 200px;
+transform: skew(-20deg) translateX(20%);
+    background-image: url("../imgs/2_shadow.png");
+    filter: blur(10px) brightness(-100);
+  -webkit-filter: blur(10px) brightness(-100);
+  opacity: .5;
+  animation-name: zenitsushadowanimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-delay: 2s;
+}
+.raio1{
+   
+    width: 700px;
+    height: 400px;
+        animation-name: raio1animation;
+        animation-duration: 3s;
+        animation-delay: 1.5s;
+        position: absolute;
+        top: 0%;
+        left: -300px;
+    
+}
+.raio2{
+   
+    width: 1572px;
+    height: 405px;
+    
+    position: absolute;
+    top: 00%;
+    animation-name: raio2animation;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+}
+.raio3{
+    
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 0%;
+    left: 65%;
+    animation-name: raio3animation;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+@keyframes raio3animation{
+    0%{
+        background-image: url("../imgs/raio3.gif");
+    }
+}
+@keyframes raio2animation{
+    0%{
+        background-image: url("../imgs/raio2.gif"); 
+    }
+}
+@keyframes raio1animation{
+    0%{
+        background-image: url("../imgs/raio1.gif");
+        
+    }
+}
+@keyframes zenitsumoviment{
+    30%{
+        transform: translate(0%,0%);
+    }
+    100%{
+        transform: translate(750%,0%);
+    }
+}
+@keyframes zenitsushadowanimation{
+    0%{
+        background-image: url("../imgs/2_shadow.png");
+        
+    }
+    30%{
+        background-image: url("../imgs/1_shadow.png");
+       
+    }
+    90%{
+        background-image: url("../imgs/1_shadow.png");
+        
+    }
+    100%{
+        background-image: url("../imgs/2_shadow.png");
+        transform: skew(-40deg) translateX(30%);
+    }
+}
+@keyframes zenitsuanimation{
+    0%{
+        background-image: url("../imgs/2.png");
+        
+    }
+    30%{
+        background-image: url("../imgs/1.png");
+        
+    }
+    
+    90%{
+        background-image: url("../imgs/1.png");
+    }
+    100%{
+        background-image: url("../imgs/2.png");
+    }
+}
